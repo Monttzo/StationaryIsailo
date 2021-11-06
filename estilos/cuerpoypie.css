@@ -1,0 +1,97 @@
+* {
+	color: rgb(255, 240, 201);
+}
+header { /*Modifica el header*/
+	-webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75); 
+	box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75); 
+}
+body { /*Modifica el body*/
+	margin: 25px 100px;
+	background-image:url('imagenes/fondo.png');
+	background-size: 100%;
+	font-family: 'CaviarDreamsRegular', Arial, sans-serif;
+	flex-wrap: wrap;
+}
+.cuerpo td { /*Modifica el td de la clase .cuerpo*/
+	padding: 5% 7.5%;
+}
+.cuerpo { /*Modifica la clase cuerpo */
+	background-color: rgba(0, 0, 0, 0.86);
+	padding: 100px 15%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+}
+.pie a{ /*Modifica el a de la clase pie */
+	color: rgb(4, 74, 97);
+}
+.pie { /*Modifica la clase pie */
+	box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+	background-color: rgba(0, 0, 0, 0.86);
+	padding: 20px 80px;
+	border-radius: 8px;
+}
+a { /*Modifica la etiqueta a */
+	text-decoration: none;
+}
+input { /*Modifica la etiqueta input*/
+	border-radius: 8px;
+	border-width: 0px;
+	background-color: rgba(74, 74, 72, 0.75);
+	font-size: 20px;
+	text-align: center;
+	border-bottom-color: rgb(0, 169, 157);
+	border-bottom-width: 4px;
+	height: 50px;
+}
+input:placeholder-shown {
+	border-bottom-color: rgb(119, 0, 34);
+}
+.registrar{
+	width: 30%;
+	height: 100%;
+} 
+.volver {
+	background-color: rgba(119, 0, 34, 0.75);
+	color: rgb(208, 205, 205 , 0.75);
+	padding: 20px 30px;
+	font-style: TINY;
+	display: block;
+}
+.volver:hover {
+	border-bottom-color: rgba(208, 205, 205 , 0.75);
+	border-bottom-width: 3px; 
+}
+.encabeza { /*Modifica la clase encabeza*/
+	border-radius: 8px;
+	width: 100%;
+}
+.REGE {
+	width: 70%;
+}
+/*Responsive*/
+@media screen and (max-width: 1400px){
+	body {
+		margin: 25px 7.5%;
+	}
+	.escudo {
+		width: 100px;
+	}
+	.cuerpo td{
+		padding: 5% 50px;
+	}
+}
+@media screen and (max-width:900px){
+	.encabeza {
+		height: 100px;
+	}
+	.cuerpo {
+		padding: 5%;
+	}
+	.cuerpo td {
+		padding: 0px;
+	}
+}

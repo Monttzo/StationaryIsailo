@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registrar Compra</title>
+	<link rel="stylesheet" type="text/css" href="../estilos/cuerpoypie.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/menu_nav.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/InicioVarios.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/registrar_usuarios.css">
+</head>
+<body>
+	<header style="position: relative; z-index: 999;">
+		<div class="encabezado">
+		<a href="../Inicio.php"><img src="../estilos/imagenes/encabezado.png" height="70px" width="100%" class="encabeza"></a>
+		</div>
+		<div>
+			<nav class="nave">
+				<ul class="menu">
+					<li><a href="#">Empleado</a>
+						<ul class="submenu1">
+							<li><a href="registrar.php">Registrar Empleado</a></li>
+							<li><a href="ConsultarEFor.php">Consultar Empleado</a></li>
+							<li><a href="ModificarE.php">Modificar Empleado</a></li>
+							<li><a href="InactivarEFor.php">Inactivar Empleado</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Compra</a>
+						<ul class="submenu1">
+							<li><a href="RegistrarC.html">Registrar Compra</a></li>
+							<li><a href="ConsultarC.html">Consultar Compra</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Producto</a>
+						<ul class="submenu1">
+							<li><a href="../producto/RegistrarP.html">Registrar Producto</a></li>
+							<li><a href="../producto/ConsultarP.html">Consultar Producto</a></li>
+							<li><a href="../producto/ModificarP.html">Modificar Producto</a></li>
+							<li><a href="../producto/InactivarP.html">Inactivar Producto</a></li>
+							<li><a href="../producto/ReporteEP.html">Reporte Existencia Producto</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Venta</a>
+						<ul class="submenu1">
+							<li><a href="../venta/RegistrarV.html">Registrar Venta</a></li>
+							<li><a href="../venta/ConsultarV.html">Consultar Ventas</a></li>
+							<li><a href="../venta/AnularFV.html">Anular Factura Venta</a></li>
+							<li><a href="../ReporteV.html">Reporte Ventas</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Cliente</a>
+						<ul class="submenu1">
+							<li><a href="../Clientes/RegistrarC.html">Registrar Cliente</a></li>
+							<li><a href="../Clientes/ConsultarC.html">Consultar Cliente</a></li>
+							<li><a href="../Clientes/ModificarC.html">Modificar Cliente</a></li>
+							<li><a href="../Clientes/InactivarC.html">Inactivar Cliente</a></li>
+						</ul>
+					</li>
+					<li><a href="../Login.php">Cerrar Sesión</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="cuerpo">
+		<form method="get" action="RegistrarCFor.html">
+			<label for="idCompra">Digite el id de la Compra</label>
+			<input type="search" name="idCompra">
+		</form>
+		<form method="get" action="#">
+			<table>
+				<tr>
+					<td><label for="idCompra">Digite la id de la compra:</label>
+						<input type="num" name="idCompra">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="fechaCompra">Seleccione la fecha en la que se realiza la compra:</label>
+						<input type="date" name="fechaCompra">
+					</td>
+					<td><label for="subtotalCompra">Digite el Subtotal de la compra:</label>
+						<input type="num" name="subtotalCompra">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="ivaCompra">Digite el iva de la compra:</label>
+						<input type="num" name="ivaCompra">
+					</td>
+					<td><label for="totalCompra">Digite el Total de la compra:</label>
+						<input type="num" name="totalCompra">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="estadoCompra">Seleccione el estado de la compra:</label>
+						<select name="estadoCompra">
+							<option selected>Generado</option>
+							<option>Anulado</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<center><input type="submit" name="RegistrarC" value="Registrar Compra"></center>
+		</form>
+	</div>
+	<br>
+	<footer>
+		<div class="pie">
+			<p>Diseñado por: <a href="mailto:dpulido59@gmail.com"> Daniel Esteban Monsalve Pulido</a> y <a href="mailto:camiloacasallas@gmail.com">Camilo Andres Casallas Gomez.</a></p>
+			<p><a href="http://www.freepik.com">Fondo Diseñado por Freepik</a><p>
+		</div>
+	</footer>
+</body>
+</html>
